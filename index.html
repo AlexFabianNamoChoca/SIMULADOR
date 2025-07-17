@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Conocimientos Aduaneros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Conocimientos Aduaneros</h1>
+        <div id="quiz-container">
+            <div id="question-display">
+                <!-- La pregunta actual se cargará aquí -->
+            </div>
+            <div id="instant-feedback">
+                <!-- Feedback instantáneo aquí -->
+            </div>
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="hidden">Anterior</button>
+                <button id="next-btn">Siguiente</button>
+                <button id="submit-btn" class="hidden">Finalizar Examen</button>
+            </div>
+        </div>
+
+        <div id="results-container" class="hidden">
+            <h2>Resultados Finales</h2>
+            <p>Puntuación: <span id="score"></span></p>
+            <div id="final-feedback">
+                <!-- El feedback de cada pregunta se mostrará aquí al final -->
+            </div>
+            <button id="restart-btn">Reiniciar Examen</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
